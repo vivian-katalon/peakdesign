@@ -1,0 +1,1101 @@
+{
+  "version": "1.0.0",
+  "context": {
+    "metadata": {
+      "name": "Manage Study Settings and Logout",
+      "description": "Navigate to the gateway, add exceptions, configure settings, save changes, and logout to verify the home page.",
+      "id": "d677fc1a-be62-4ccd-b176-21e2c53752d9",
+      "index": 1464,
+      "score": 75,
+      "popularity_value": 0.00003094565950006349,
+      "additionalProperties": {
+        "trueTest": {
+          "globalId": "7697d62a-1926-44a7-bf07-3f2ff6b92075",
+          "prevGlobalId": "3fde50f7-512f-4d43-b749-2e41ff8569be",
+          "prevSession": "bdbe8f6f-d7e3-4264-8977-090a63efca4b",
+          "session": "53e4eee6-9a04-4af8-9ebe-5b8160e3eaba",
+          "status": "STABLE",
+          "userSessionId": "8e6cd602-c877-467b-8d19-684037389430<>1759315267731_05eb219d-c740-42c9-b9c1-092cca2af4eb",
+          "recordedSessionTimestamp": {
+            "start": 1759315267830,
+            "end": 1759315336944
+          },
+          "config": {
+            "dynamic_url_variable_level": "TESTCASE"
+          },
+          "linkedTestCaseId": null
+        }
+      },
+      "session_attributes": {},
+      "internal_session_attributes": {},
+      "status": "ACTIVE"
+    }
+  },
+  "steps": [
+    {
+      "id": "7da2c50f-1a44-4a70-be22-21a89d8e9746",
+      "name": "Navigate to /gateway",
+      "action": {
+        "type": "navigate",
+        "parameters": {
+          "value": "/gateway"
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": -1,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "a55fdfc7-4cbd-4d01-b446-7ac6e788b8e4",
+      "name": "Enter input value in input numberFilter",
+      "action": {
+        "type": "input",
+        "parameters": {
+          "target": {
+            "id": "efd2e1bd-ecea-48e0-9d4e-52abd9531260",
+            "name": "input_numberFilter",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/app-study-settings[1]/div[2]/div[2]/div[2]/app-widget[1]/details[1]/section[1]/div[1]/div[1]/app-query-tat[1]/div[1]/form[1]/div[1]/div[1]/div[1]/input[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[class=\"w-100\\ mr-4\\ ng-pristine\\ ng-valid\\ ng-touched\"]"
+              },
+              {
+                "type": "SMART",
+                "value": "app-query-tat input[type=\"number\"] >> nth=0"
+              }
+            ],
+            "attributes": {
+              "type": "number"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "spinbutton"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          },
+          "value": "${{input_numberFilter}}"
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 12,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "bdf2f9c5-38e4-4af7-b240-e3be754c76a2",
+      "name": "Enter input value in input number",
+      "action": {
+        "type": "input",
+        "parameters": {
+          "target": {
+            "id": "8d7a0b0f-7d14-4b80-980f-463b77487dd0",
+            "name": "input_number",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/app-study-settings[1]/div[2]/div[2]/div[2]/app-widget[1]/details[1]/section[1]/div[1]/div[1]/app-query-tat[1]/div[1]/form[1]/div[1]/div[2]/div[1]/input[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[class=\"w-100\\ mr-4\\ ng-pristine\\ ng-valid\\ ng-touched\"]"
+              },
+              {
+                "type": "SMART",
+                "value": "app-query-tat input[type=\"number\"] >> nth=1"
+              }
+            ],
+            "attributes": {
+              "type": "number"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "spinbutton"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          },
+          "value": "${{input_number}}"
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 13,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "b6b7355b-fd86-4cce-b0b1-417fdbcb949e",
+      "name": "Enter input value in input number2",
+      "action": {
+        "type": "input",
+        "parameters": {
+          "target": {
+            "id": "de76c504-5193-494d-bcdd-f1c356c9d1c7",
+            "name": "input_number2",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/app-study-settings[1]/div[2]/div[2]/div[2]/app-widget[1]/details[1]/section[1]/div[1]/div[1]/app-query-tat[1]/div[1]/form[1]/div[1]/div[3]/div[1]/input[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[class=\"w-100\\ mr-4\\ ng-pristine\\ ng-valid\\ ng-touched\"]"
+              },
+              {
+                "type": "SMART",
+                "value": "app-query-tat input[type=\"number\"] >> nth=2"
+              }
+            ],
+            "attributes": {
+              "type": "number"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "spinbutton"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          },
+          "value": "${{input_number2}}"
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 12,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "24467013-2cff-403e-ac0e-534cc4cc72e4",
+      "name": "Click on button addException",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "4d740320-de03-4df9-96eb-4ed5ffa740ea",
+            "name": "button_addException",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/app-study-settings[1]/div[2]/div[2]/div[2]/app-widget[1]/details[1]/section[1]/div[1]/div[1]/app-query-tat[1]/div[1]/form[1]/div[1]/cr-button[1]/button[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[class=\"mt-4\"] > .button"
+              },
+              {
+                "type": "SMART",
+                "value": "app-query-tat button"
+              }
+            ],
+            "attributes": {
+              "text": "Add Exception",
+              "type": "button"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "button"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "8aa10753-fbd4-4ad5-a279-80bbeb602871",
+              "name": "appScopedStyles_object9",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          }
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 11,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "8d1dedd7-3216-4d1b-a894-143abe882163",
+      "name": "Enter input value in input overrideTatforQueries",
+      "action": {
+        "type": "input",
+        "parameters": {
+          "target": {
+            "id": "98f9b369-9c11-41cc-8d4b-a90fa4ef9b02",
+            "name": "input_overrideTatforQueries",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/cr-modals-container[1]/cr-modal-opener[1]/cr-modal[1]/dialog[1]/div[1]/app-query-exception-modal[1]/form[1]/cr-modal-body[1]/cr-input[1]/div[1]/div[2]/input[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[id=\"cr-input-fflw5-1\"]"
+              },
+              {
+                "type": "SMART",
+                "value": "internal:label=\"Override TAT for Queries\"s"
+              }
+            ],
+            "attributes": {
+              "autocomplete": "off",
+              "id": "cr-input-fflw5-1",
+              "label": " Override TAT for Queries ",
+              "type": "text"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "textbox"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          },
+          "value": "${{input_overrideTatforQueries}}"
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 11,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "c21c3894-d15a-4328-8b0f-cf34b73dda6f",
+      "name": "Enter input value in input overrideTat",
+      "action": {
+        "type": "input",
+        "parameters": {
+          "target": {
+            "id": "6165f2a3-f079-42ee-80c2-ef7b28d03250",
+            "name": "input_overrideTat",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/cr-modals-container[1]/cr-modal-opener[1]/cr-modal[1]/dialog[1]/div[1]/app-query-exception-modal[1]/form[1]/cr-modal-body[1]/cr-input[2]/div[1]/div[2]/input[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[id=\"cr-input-7t531-2\"]"
+              },
+              {
+                "type": "SMART",
+                "value": "internal:label=\"Override TAT for Quality Notifications\"s"
+              }
+            ],
+            "attributes": {
+              "autocomplete": "off",
+              "id": "cr-input-7t531-2",
+              "label": " Override TAT for Quality Notifications ",
+              "type": "text"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "textbox"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          },
+          "value": "${{input_overrideTat}}"
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 11,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "b55ecd5c-76af-4baf-8261-fe9dddc717ff",
+      "name": "Click on div openCombobox",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "f0e25f74-08a4-45ae-9e2c-7411fc3b6f2a",
+            "name": "div_openCombobox",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/cr-modals-container[1]/cr-modal-opener[1]/cr-modal[1]/dialog[1]/div[1]/app-query-exception-modal[1]/form[1]/cr-modal-body[1]/cr-multiselect-combobox[1]/cr-popover-container[1]/div[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[class=\"combo-box__field\\ repel\\ w-full\"]"
+              },
+              {
+                "type": "SMART",
+                "value": "internal:label=\"Open combobox\"s"
+              }
+            ],
+            "attributes": {
+              "id": "combobox-input-l6ylq"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": ""
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "ee4932a2-88b9-4e76-86b1-d85a88346162",
+              "name": "appScopedStyles_object10",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          }
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 11,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "e6b384c6-a4b7-4e3e-ad78-fdf740dde342",
+      "name": "Click on input baselineVisitForMr",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "0dec6dc1-713f-482d-a57b-f392286114b5",
+            "name": "input_baselineVisitForMr",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/cr-modals-container[1]/cr-modal-opener[1]/cr-modal[1]/dialog[1]/cr-popover-portal[1]/cr-popover[1]/cr-multiselect-combobox-overlay[1]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[id=\"listbox-o5jri-0-checkbox\"]"
+              },
+              {
+                "type": "SMART",
+                "value": "internal:label=\"baseline_visit_for_mr\"s"
+              }
+            ],
+            "attributes": {
+              "id": "listbox-o5jri-0-checkbox",
+              "type": "checkbox"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "checkbox"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          }
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 11,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "284075cc-d96b-4171-8afc-4122fbd81fd9",
+      "name": "Click on header overrideDefaultTat",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "03aadbd5-77aa-4c9b-b90c-4ace5d41d104",
+            "name": "header_overrideDefaultTat",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/cr-modals-container[1]/cr-modal-opener[1]/cr-modal[1]/dialog[1]/div[1]/app-query-exception-modal[1]/form[1]/cr-modal-header[1]/div[1]/div[1]/h3[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[class=\"heading-4\"]"
+              },
+              {
+                "type": "SMART",
+                "value": "#aria-label-r105a"
+              },
+              {
+                "type": "SMART",
+                "value": "internal:label=\"Override Default TAT\"s >> h3"
+              }
+            ],
+            "attributes": {
+              "id": "aria-label-r105a"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": ""
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          }
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 1,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "99a9b5f6-4586-45d5-838a-26d8aebcb9b8",
+      "name": "Click on button save7",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "1ab6fe3d-5997-4873-a92a-f86a46d0a045",
+            "name": "button_save7",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/cr-modals-container[1]/cr-modal-opener[1]/cr-modal[1]/dialog[1]/div[1]/app-query-exception-modal[1]/form[1]/cr-modal-footer[1]/menu[1]/button[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[class=\"dialog__menu\"] > .button"
+              },
+              {
+                "type": "SMART",
+                "value": "button >> internal:text=\"Save\"s"
+              },
+              {
+                "type": "SMART",
+                "value": "internal:label=\"Override Default TAT\"s >> menu button"
+              }
+            ],
+            "attributes": {
+              "text": "Save"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "button"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          }
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 11,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "766aa4b7-25e5-4d55-812c-010dbe85de96",
+      "name": "Click on button submit3",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "e910e805-ce8f-43ba-a4be-cb48988c76d1",
+            "name": "button_submit3",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/app-study-settings[1]/div[2]/div[2]/div[1]/div[1]/button[1]"
+              },
+              {
+                "type": "CSS",
+                "value": ".submit"
+              },
+              {
+                "type": "SMART",
+                "value": "button >> internal:text=\"Submit\"s"
+              },
+              {
+                "type": "SMART",
+                "value": "#angular-app-root button >> nth=0"
+              },
+              {
+                "type": "SMART",
+                "value": "app-study-settings button >> nth=0"
+              }
+            ],
+            "attributes": {
+              "text": "Submit",
+              "type": "button"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "button"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          }
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 33,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "b6b461fa-5380-4bc7-9c88-c6a61a285dcd",
+      "name": "Click on button submit3 -> Navigate to page '/studies/*/query-settings'",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "e910e805-ce8f-43ba-a4be-cb48988c76d1",
+            "name": "button_submit3",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//div/app-study-settings[1]/div[2]/div[2]/div[1]/div[1]/button[1]"
+              },
+              {
+                "type": "CSS",
+                "value": ".submit"
+              },
+              {
+                "type": "SMART",
+                "value": "button >> internal:text=\"Submit\"s"
+              },
+              {
+                "type": "SMART",
+                "value": "#angular-app-root button >> nth=0"
+              },
+              {
+                "type": "SMART",
+                "value": "app-study-settings button >> nth=0"
+              }
+            ],
+            "attributes": {
+              "text": "Submit",
+              "type": "button"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "button"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false,
+            "parent": {
+              "id": "225813d7-fd90-4c45-adb2-364331d9e957",
+              "name": "appScopedStyles_object4",
+              "locators": [
+                {
+                  "type": "XPATH",
+                  "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/section[1]/app-micro-app[1]/div[1]/div[1]/app-permitted[1]/app-scoped-styles[1]"
+                },
+                {
+                  "type": "CSS",
+                  "value": "app-scoped-styles"
+                },
+                {
+                  "type": "SMART",
+                  "value": "app-scoped-styles"
+                }
+              ],
+              "attributes": {},
+              "context": {
+                "metadata": {
+                  "additionalProperties": {
+                    "trueTest": {
+                      "targetRole": ""
+                    }
+                  }
+                }
+              },
+              "is_dynamic": false
+            }
+          }
+        }
+      },
+      "context": {
+        "pattern": "/gateway",
+        "count": 40,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "acc40ae0-5050-4a32-8cb8-2eaaa8c15e54",
+      "name": "Click on button manageStudySettings",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "20558c95-bd43-4d63-add0-feabb94c9a10",
+            "name": "button_manageStudySettings",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//body/app-root[1]/app-micro-portal-layout[1]/div[1]/app-header[1]/header[1]/div[2]/div[2]/cr-dropdown-menu[1]/cr-popover-container[1]/trigger[1]/button[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "[class=\"relative\"] .body-small-regular"
+              },
+              {
+                "type": "SMART",
+                "value": "button >> internal:text=\"MSManage Study Settings\"s"
+              },
+              {
+                "type": "SMART",
+                "value": "app-header header button >> nth=1"
+              }
+            ],
+            "attributes": {
+              "text": "MS\nManage Study Settings"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "button"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false
+          }
+        }
+      },
+      "context": {
+        "pattern": "/studies/*/query-settings",
+        "count": 93,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "442e4dff-f8a5-463c-8657-71c376c9abc3",
+      "name": "Click on link logout -> Navigate to page ''",
+      "action": {
+        "type": "click",
+        "parameters": {
+          "target": {
+            "id": "43665b6b-cc1e-4488-8499-8ce5eec83fad",
+            "name": "link_logout",
+            "locators": [
+              {
+                "type": "XPATH",
+                "value": "//body/cr-popover-portal[2]/cr-popover[1]/cr-dropdown-menu-overlay[1]/ul[1]/li[2]/a[1]"
+              },
+              {
+                "type": "CSS",
+                "value": "li:nth-of-type(2) > .menu-item"
+              },
+              {
+                "type": "SMART",
+                "value": "[data-testid=\"nav\\.header\\.logout\"]"
+              }
+            ],
+            "attributes": {
+              "data-testid": "nav.header.logout",
+              "href": "https://portal.int.ert.com/#",
+              "text": "Logout"
+            },
+            "context": {
+              "metadata": {
+                "additionalProperties": {
+                  "trueTest": {
+                    "targetRole": "menuitem"
+                  }
+                }
+              }
+            },
+            "is_dynamic": false
+          }
+        }
+      },
+      "context": {
+        "pattern": "/studies/*/query-settings",
+        "count": 53,
+        "isPopup": false
+      }
+    },
+    {
+      "id": "d4dc5320-7ce6-40c5-9ebc-7cc49455d4a6",
+      "name": "Take full page screenshot as checkpoint",
+      "action": {
+        "type": "view",
+        "parameters": {}
+      },
+      "context": {
+        "pattern": "",
+        "count": -1,
+        "isPopup": false
+      }
+    }
+  ],
+  "config": {
+    "variables": {
+      "input_numberFilter": "",
+      "input_number": "",
+      "input_number2": "",
+      "input_overrideTatforQueries": "",
+      "input_overrideTat": ""
+    },
+    "dynamicLocatorVariables": {},
+    "dynamicUrlVariables": {},
+    "dynamicAttributeVariables": {},
+    "fixtureVariables": {}
+  },
+  "fixtures": []
+}
